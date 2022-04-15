@@ -27,6 +27,18 @@ android {
             )
         }
     }
+
+    // TODO: 1-1. Add 'dev' flavorDimensions
+
+    // TODO: 1-2. Add new block 'productFlavors' and define two product flavors 'free' and 'paid'
+
+    // TODO: 1-3. Assign application id suffix to each of them
+
+    // TODO: 1-4. After completing previous sections, sync the project. Now from menu bar,
+    //  if you select Build>select active build variants, you will see
+    //  different active build variants you've created.
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
