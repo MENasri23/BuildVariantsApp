@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BuildVariantsApp</string>
+    <string name="welcome" />
 </resources>

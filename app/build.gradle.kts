@@ -18,15 +18,29 @@ android {
 
     buildTypes {
         release {
-            isDebuggable = false
             isMinifyEnabled = false
-            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
     }
+
+    val devDimension = "dev"
+    flavorDimensions += devDimension
+
+    productFlavors {
+        create("free") {
+            dimension = devDimension
+            applicationIdSuffix = ".free"
+        }
+
+        create("paid") {
+            dimension = devDimension
+            applicationIdSuffix = ".paid"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
